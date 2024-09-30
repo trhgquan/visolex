@@ -41,6 +41,9 @@ project_variables.py                     # Define global variables
 requirements.txt                         # System dependencies
 utils.py                                 # Supporting functions for preprocessing, result writing, etc.
 ```
+#### **Note:**
+- Experimental data is available at this GitHub repository.
+- Model checkpoints can be downloaded via this [Google Drive URL](https://drive.google.com/drive/folders/1soK6OtsJ5L2C0N1nJMaVDEfySZ7FDfil?usp=drive_link).
 
 ## Instructions for Researchers and Developers
 
@@ -100,6 +103,10 @@ Same as above.
 ```
 
 This web interface can also be deployed on Google Colab. See the tutorial in `demo.ipynb`.
+
+## Video Tutorial
+
+A demonstration video on how to use the interface is accessible via this [Google Drive URL](https://drive.google.com/file/d/1JJ3JqrXBan_0KjLFHDjxYwZ1MRkU61ou/view?usp=drive_link).
 
 ## License
 
