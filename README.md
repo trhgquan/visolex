@@ -42,7 +42,7 @@ requirements.txt                         # System dependencies
 utils.py                                 # Supporting functions for preprocessing, result writing, etc.
 ```
 #### **Note:**
-- Experimental data is available at this GitHub repository.
+- Experimental data is available at this GitHub repository [ViSoLex Resources](https://github.com/AnhHoang0529/ViSoLex-Resources.git).
 - Model checkpoints can be downloaded via this [Google Drive URL](https://drive.google.com/drive/folders/1soK6OtsJ5L2C0N1nJMaVDEfySZ7FDfil?usp=drive_link).
 
 ## Instructions for Researchers and Developers
