@@ -106,7 +106,7 @@ This web interface can also be deployed on Google Colab. See the tutorial in `de
 
 ## Video Tutorial
 
-A demonstration video on how to use the interface is accessible via this [Google Drive URL](https://drive.google.com/file/d/1JJ3JqrXBan_0KjLFHDjxYwZ1MRkU61ou/view?usp=drive_link).
+A demonstration video on how to use the interface is accessible via this [URL](https://www.youtube.com/watch?v=XBIAogDpF3o).
 
 ## License
 
