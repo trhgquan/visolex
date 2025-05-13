@@ -1,6 +1,6 @@
 import os
 import numpy as np
-from normalizer.rule_attention_network import RAN
+from rule_attention_network import RAN
 from utils import sort_data, gen_dataIter
 
 class Teacher:

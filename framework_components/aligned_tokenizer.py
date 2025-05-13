@@ -1,4 +1,4 @@
-from utils import run_strip_accents
+from utils import run_strip_accents, add_special_token
 from project_variables import MASK_TOKEN, NULL_STR
 
 def remove_diacritics(sent_list, rm_accent_ratio):
