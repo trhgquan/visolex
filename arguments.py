@@ -38,5 +38,8 @@ def parse_arguments():
     parser.add_argument("--topk", help="Return top K predictions", type=int, default=1)
     parser.add_argument("--seed", type=int, default=42, help="random seed for initialization")
     
+    # Inference
+    parser.add_argument("--inference_configs", default=None)
+
     args = parser.parse_args()
     return args

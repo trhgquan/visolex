@@ -139,7 +139,7 @@ def demo():
     args = parse_arguments()
     np.random.seed(args.seed)
 
-    with open("config.json", "r+", encoding="utf-8") as f:
+    with open(args.inference_configs, "r+", encoding="utf-8") as f:
         inference_configs = json.load(f)
 
     TEXT_COL = inference_configs["text_col"]
