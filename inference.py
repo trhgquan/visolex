@@ -6,6 +6,7 @@ import json
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 from framework_components.student import Student
+from framework_components.log import get_logger, close
 from utils import post_process, delete_special_tokens, get_tokenizer
 from project_variables import DICT_PATH
 from arguments import parse_arguments
@@ -162,14 +163,18 @@ def demo():
     args.append_n_mask = True
     args.nsw_detect = True
 
+    logger = get_logger(logfile=os.path.join(args.logdir, 'demo.log'))
+
     # Setup CUDA, GPU
     device = "cuda" if torch.cuda.is_available() else "cpu"
     args.n_gpu = torch.cuda.device_count()
     args.device = device
 
     tokenizer = get_tokenizer(args.student_name)
-    student = Student(args, tokenizer=tokenizer, logger=None)
+    student = Student(args, tokenizer=tokenizer, logger=logger)
     student.load("student_best")
+
+    logger.info("\n\n\t\t *** START DEMO ***\nargs={}".format(args))
 
     cleaned_res = []
     text_to_clean = df[TEXT_COL]
@@ -181,6 +186,8 @@ def demo():
     df[f"{args.student_name}_cleaned"] = cleaned_res
 
     df.to_csv(inference_configs["output_file"], index=False)
+    logger.info("\n\n\t\t *** END DEMO ***")
+    close(logger)
 
 
 demo()
