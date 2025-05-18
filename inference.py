@@ -130,12 +130,12 @@ def demo():
     print(bold("Chose service:"))
     print("1. If you want to normalize non-standard words in a sentence, enter 'lexnorm'")
     print("2. If you want to look non-standard words up in NSW dictionary, enter 'dict_lookup'")
-    service = input()
+    # service = input()
+    service = 'lexnorm'
     while service not in ['lexnorm', 'dict_lookup']:
         print(bold("INVALID service name: Only support 'lexnorm' or 'dict_lookup'"))
         print(bold("Chose service:"))
-        # service = input()
-        service = 'lexnorm'
+        service = input()
 
     if service == 'lexnorm':
         print("====================================================================")
