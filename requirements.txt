@@ -6,6 +6,7 @@ joblib
 transformers
 protobuf
 numpy
+tqdm
 torch
 pandas
 scikit-learn
